@@ -1,10 +1,10 @@
-import { axiosInstance } from '.';
 import { SoloonColor } from '../lib/data';
+import { axiosInstance } from '.';
 
 export async function CreateSoloon(
   row: number,
   column: number,
-  color: (typeof SoloonColor)[number]
+  color: string
 ) {
   await axiosInstance.post('/soloons', { row, column, color });
   `${color.toUpperCase()} Soloon created at position (${row},${column})`;

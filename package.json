@@ -12,6 +12,7 @@
     "start": "npm run build && node build/index.js",
     "cross": "npm run build && node build/make-a-polyanet-cross.js",
     "logo": "npm run build && node build/make-the-logo.js",
+    "clear": "npm run build && node build/clear-map.js",
     "build": "rimraf ./build && tsc"
   }
 }

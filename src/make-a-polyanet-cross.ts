@@ -1,7 +1,8 @@
 // const fetch = require('node-fetch');
-import { CreatePolyanet } from './api/polyanets';
-import { ClearMap } from './lib/map';
+
 import { getErrorMessage, wait } from './lib/utils';
+
+import { CreatePolyanet } from './api/polyanets';
 
 async function MakeAPolyanetCross(padding = 0, colNumber = 11) {
   console.log('Creating cross...');
@@ -19,7 +20,5 @@ async function MakeAPolyanetCross(padding = 0, colNumber = 11) {
 }
 
 (async function () {
-  // This was used for development, to automate the process of clearing the whole map if there was a problem with the function
-  // await ClearMap();
   await MakeAPolyanetCross(2);
 })();
