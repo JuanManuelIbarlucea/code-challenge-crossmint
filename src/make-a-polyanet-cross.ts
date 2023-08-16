@@ -4,7 +4,12 @@ import { getErrorMessage, wait } from './lib/utils';
 
 import { CreatePolyanet } from './api/polyanets';
 
-async function MakeAPolyanetCross(padding = 0, colNumber = 11) {
+// Creates polyanets through the Inversed and Exchange matrix
+// Padding represents the amount of spaces around the cross.
+
+// colNumber could easily be replaced by calling the CurrentGoalMap function
+// and getting the size of it's first element.
+async function MakeAPolyanetCross(padding:number = 0, colNumber: number = 11) {
   console.log('Creating cross...');
 
   try {
