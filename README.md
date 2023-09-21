@@ -4,16 +4,6 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-
-#### Env files
-
-Create a new .env file and load it the following variables: 
-
-```sh
-VALORANT_API=https://api.henrikdev.xyz
-POSTS_API=https://6396aee2a68e43e41808fa18.mockapi.io/api/posts
-```
-
 ## Installation
 
 Start with cloning this repo on your local machine:
